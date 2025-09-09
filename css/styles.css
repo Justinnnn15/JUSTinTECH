@@ -20,7 +20,7 @@ body {
 
 nav {
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 60px;
     padding: 20px;
 }
@@ -118,8 +118,8 @@ body::before {
     position: fixed;
     bottom: -70%;
     left: -20%;
-    width: 1000px;
-    height: 1000px;
+    width: 1300px;
+    height: 1300px;
     background: radial-gradient(circle at center, #333333 60%, transparent 70%);
     border-radius: 50%;
     opacity: 0.3;
