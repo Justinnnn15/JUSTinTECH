@@ -1,0 +1,135 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden; /* To prevent scrollbar from moon */
+}
+
+/* Navbar for Home Page */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% - 100px);
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 100px;
+    color: white;
+}
+
+.navbar .logo sup {
+    font-size: 0.5em;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding-right: 100px; 
+    box-sizing: border-box;
+}
+
+.moon-image {
+    position: absolute;
+    bottom: -600px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 1400px;
+    height: 1400px;
+    object-fit: contain;
+    filter:brightness(0.8) grayscale(100%);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 50; 
+    width: 40%; 
+    margin-right: 50px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+    text-justify: inter-word;
+    width: 100%;
+
+
+}
+
+.get-started-btn {
+    background-color: #333; /* Darker grey for button */
+    color: white;
+    border: 1px solid white;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.get-started-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Parts Navbar (Second Page) */
+.parts-navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 50px;
+    border-bottom: 1px solid #333; /* Subtle line below navbar */
+}
+
+.parts-navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 1em;
+    padding-bottom: 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.parts-navbar a:hover,
+.parts-navbar a.active {
+    color: #007bff; /* Example active/hover color */
+    border-bottom: 2px solid #007bff;
+}
+
+.content-area {
+    padding: 50px;
+    /* This area will be dynamically filled or can be left black for now */
+}
