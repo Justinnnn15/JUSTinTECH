@@ -4,10 +4,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     color: white;
-    overflow: hidden; /* To prevent scrollbar from moon */
+    overflow: hidden; 
 }
 
-/* Navbar for Home Page */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -89,7 +89,7 @@ body {
 }
 
 .get-started-btn {
-    background-color: #333; /* Darker grey for button */
+    background-color: #333; 
     color: white;
     border: 1px solid white;
     padding: 15px 30px;
@@ -105,7 +105,7 @@ body {
     color: black;
 }
 
-/* Parts Navbar (Second Page) */
+
 .parts-navbar-wrap {
     width: 100%;
     background: transparent;
@@ -113,11 +113,11 @@ body {
 
 .parts-navbar {
     display: flex;
-    justify-content: space-evenly; /* spread items evenly */
+    justify-content: space-evenly; 
     align-items: center;
     background-color: transparent;
     padding: 20px 50px;
-    border-bottom: 1px solid #222; /* Subtle line below navbar */
+    border-bottom: 1px solid #222; 
 }
 
 .parts-navbar a {
@@ -130,7 +130,7 @@ body {
 
 .parts-navbar a:hover,
 .parts-navbar a.active {
-    color: #ddd; /* lighter on hover/active */
+    color: #ddd; 
     transform: translateY(-3px);
 }
 
@@ -162,5 +162,5 @@ body {
 
 .content-area {
     padding: 50px;
-    /* This area will be dynamically filled or can be left black for now */
+    
 }
