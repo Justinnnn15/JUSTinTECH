@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUSTInTECH - PC Parts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="parts-navbar-wrap">
         <nav class="parts-navbar">
             <a href="indexx.html" class="home-link">HOME</a>
-            <a href="#" class="active">CPU</a>
-            <a href="#">GPU</a>
-            <a href="#">MOTHERBOARD</a>
-            <a href="#">RAM</a>
-            <a href="#">STORAGE</a>
-            <a href="#">POWER SUPPLY</a>
-            <a href="#">CASE</a>
-            <a href="#">COOLER</a>
-            <a href="#" class="tips-link">TIPS &amp; TRICKS</a>
+            <a href="#" data-component="cpu" class="active">CPU</a>
+            <a href="#" data-component="gpu">GPU</a>
+            <a href="#" data-component="motherboard">MOTHERBOARD</a>
+            <a href="#" data-component="ram">RAM</a>
+            <a href="#" data-component="storage">STORAGE</a>
+            <a href="#" data-component="power-supply">POWER SUPPLY</a>
+            <a href="#" data-component="case">CASE</a>
+            <a href="#" data-component="cooler">COOLER</a>
+            <a href="#" data-component="tips" class="tips-link">TIPS &amp; TRICKS</a>
         </nav>
     </div>
     <div class="content-area">
-        <!-- Content for selected part will go here -->
+        <div id="component-content" class="component-content">
+            <!-- Dynamic component content will be injected here -->
+        </div>
+        <div class="tips-cta-wrap">
+            <a href="parts.html#tips" class="tips-cta">STILL CONFUSED? CLICK HERE FOR TIPS AND TRICKS</a>
+        </div>
     </div>
+    <script src="parts.js"></script>
 </body>
 </html>
-<script src="parts.js"></script>
